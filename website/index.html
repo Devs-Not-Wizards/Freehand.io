@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Freehand.io | Create websites just with draings!</title>
+
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,600%7COpen+Sans:400,400i,700%7CNoto+Serif:400i' rel='stylesheet'>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="revolution/css/settings.css" />
+  <link rel="stylesheet" href="css/font-icons.css" />
+
+  <link rel="stylesheet" href="css/rev-slider.css" />
+  <link rel="stylesheet" href="css/sliders.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/colors/mint.css" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+<style> 
+.window {
+    width: 400px;
+    margin: 75px auto;
+    background: #2c3e50;
+    height: 350px;
+    border-radius: 5px;
+    display: relative;
+    box-shadow: 10px 10px 10px #888888;
+  }
+
+  .afterclose {
+    color: #34495e;
+    display: none;
+    text-align: center;
+  }
+
+  .open {
+    color: #fff;
+    padding: 15px;
+    background: #2ecc71;
+    border-radius: 4px;
+    border: none;
+  }
+
+  .bash {
+    width: 400px;
+    background: #34495e;
+    height: 310px;
+    border-radius: 5px;
+    top: 40px;
+    display: absolute;
+    color: #fff;
+  }
+
+  /* effected by controllers */
+
+  .windowmax {
+    width: 100%;
+    margin: auto;
+    background: #2c3e50;
+    height: 1000px;
+    border-radius: 5px;
+    display: relative;
+  }
+
+  .windowmin {
+    width: 300px;
+    height: 45px;
+    background: #2c3e50;
+    border-radius: 5px;
+    bottom: 0;
+    position: fixed;
+  }
+
+  .bashmax {
+    display: absolute;
+    width: 100%;
+    background: #34495e;
+    height: 960px;
+    border-radius: 5px;
+    bottom: 0;
+    color: #fff;
+  }
+
+  /* !--end--! */
+
+  .buttons {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    float: right;
+    margin: 13px 4px;
+    border: none;
+  }
+
+  .closeB {
+    background: #e74c3c;
+  }
+
+  .maximize {
+    background: #f1c40f;
+  }
+
+  .minimize {
+    background: #2ecc71;
+  }
+
+  .controls {
+    height: 40px;
+    top: 0;
+  }
+
+  .title {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+  }
+</style>
+</head>
+
+<body class="relative poppins">
+
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <main class="main-wrapper">
+
+    <!-- add transparent for**************  -->
+    <header class="nav-type-7 transparent  dark">
+
+      <nav class="navbar navbar-static-top">
+        <div class="navigation" id="sticky-nav">
+          <div class="container-fluid semi-fluid relative">
+
+            <div class="row flex-parent">
+
+              <div class="navbar-header flex-child">
+                <!-- Logo -->
+                <div class="logo-container">
+                  <div class="logo-wrap">
+                    <a href="index-ny.html">
+                      <!-- freehand logo  -->
+                      <!-- <img class="logo-dark" src="img/logo_dark.png" alt="logo"> -->
+                    </a>
+                  </div>
+                </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div> <!-- end navbar-header -->
+
+              <div class="nav-wrap flex-child">
+                <div class="collapse navbar-collapse text-center" id="navbar-collapse">
+                  
+                  <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                      <a href="#"> <strong style="color: #1EA67E">Home</strong> </a>
+                      <i class="fa fa-angle-down dropdown-trigger"></i>
+                      
+                    </li> <!-- end features -->
+
+                    <li class="dropdown">
+                      <a href="#">How to use</a>
+                      <i class="fa fa-angle-down dropdown-trigger"></i>
+                  
+                    </li>
+
+                    <li class="dropdown">
+                      <a href="./services.html">get started</a>
+                      <i class="fa fa-angle-down dropdown-trigger"></i>
+                   
+                    </li> <!-- end portfolio -->
+
+                    <li class="dropdown">
+                      <a href="#">Our team</a>
+                      <i class="fa fa-angle-down dropdown-trigger"></i>
+                   
+                    </li>
+
+                    
+
+                    <li class="mobile-socials hidden-lg hidden-md">
+                      <div class="nav-social-icons">
+                        <div class="social-icons nobase dark">
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-google-plus"></i></a>
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul> <!-- end menu -->
+                </div> <!-- end collapse -->
+              </div> <!-- end col -->
+
+              <!-- <div class="flex-child flex-right hidden-sm hidden-xs">
+                <div class="nav-social-icons right">
+                  <div class="social-icons dark nobase">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>                  
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                  </div>
+                </div>
+              </div> -->
+          
+            </div> <!-- end row -->
+          </div> <!-- end container -->
+        </div> <!-- end navigation -->
+      </nav> <!-- end navbar -->
+
+    </header>
+
+    <div class="content-wrapper oh">
+      
+      <!-- Revolution Slider -->
+      <section>
+        <div class="rev-offset"></div>
+        <div class="rev_slider_wrapper" id="home">
+          <div class="rev_slider" id="slider2">
+            <ul>
+              <!-- SLIDE 1 -->
+              <li data-fstransition="fade"
+                data-transition="fade"
+                data-slotamount="1"
+                data-masterspeed="1000"
+                data-delay="5000"
+                data-title="Creative Minimalism">
+
+                <!-- MAIN IMAGE -->
+                <img src="./img/back.png"
+                  alt=""
+                  data-bgrepeat="no-repeat"
+                  data-bgfit="cover"
+                  data-bgparallax="7"
+                  class="rev-slidebg"                  
+                  >
+
+                <!-- LAYER NR. 1 -->
+                <!-- <div class="tp-caption tp-resizeme rs-parallaxlevel-8" 
+                  id="slide-3238-layer-4" 
+                  data-x="['left','left','left','left']"
+                  data-hoffset="['-200','-200','-307','-352']" 
+                  data-y="['top','top','top','top']"
+                  data-voffset="['-4','-4','-49','-72']" 
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"                  
+                  data-type="image" 
+                  data-basealign="slide" 
+                  data-responsive_offset="on" 
+                  data-frames='[{"from":"x:left;rZ:-90deg;","speed":2500,"to":"o:1;rZ:42deg;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                  data-textAlign="['left','left','left','left']"
+                  data-paddingtop="[0,0,0,0]"
+                  data-paddingright="[0,0,0,0]"
+                  data-paddingbottom="[0,0,0,0]"
+                  data-paddingleft="[0,0,0,0]"
+                  style="z-index: 5;border-width:0px;"><img src="img/revolution/object_headphones_1.png" alt="" data-ww="['650px','650px','650px','650px']" data-hh="['650px','650px','650px','650px']" width="650" height="650" data-no-retina>
+                </div> -->
+
+                <!-- LAYER NR. 2 -->
+                <!-- <div class="tp-caption tp-resizeme rs-parallaxlevel-9" 
+                  id="slide-3238-layer-5" 
+                  data-x="['right','right','right','right']"
+                  data-hoffset="['-50','-50','-150','-224']" 
+                  data-y="['top','top','top','top']"
+                  data-voffset="['-104','-104','-133','-161']" 
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"                  
+                  data-type="image" 
+                  data-basealign="slide" 
+                  data-responsive_offset="on"
+                  data-frames='[{"from":"x:right;y:-500px;rZ:90deg;","speed":2500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                  data-textAlign="['left','left','left','left']"
+                  data-paddingtop="[0,0,0,0]"
+                  data-paddingright="[0,0,0,0]"
+                  data-paddingbottom="[0,0,0,0]"
+                  data-paddingleft="[0,0,0,0]"
+                  style="z-index: 6;border-width:0px;"><img src="img/revolution/header_flowerpot.png" alt="" data-ww="['700px','700px','700px','700px']" data-hh="['600px','600px','600px','600px']" width="700" height="600" data-no-retina>
+                </div> -->
+
+                <!-- LAYER NR. 3 -->
+                <!-- <div class="tp-caption tp-resizeme rs-parallaxlevel-10" 
+                  id="slide-3238-layer-6" 
+                  data-x="['left','left','left','left']"
+                  data-hoffset="['-372','-372','-540','-638']" 
+                  data-y="['bottom','bottom','bottom','bottom']"
+                  data-voffset="['-170','-170','-180','-182']" 
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"                
+                  data-type="image" 
+                  data-basealign="slide" 
+                  data-responsive_offset="on"
+                  data-frames='[{"from":"x:left;rZ:45deg;","speed":2500,"to":"o:1;","delay":650,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                  data-textAlign="['left','left','left','left']"
+                  data-paddingtop="[0,0,0,0]"
+                  data-paddingright="[0,0,0,0]"
+                  data-paddingbottom="[0,0,0,0]"
+                  data-paddingleft="[0,0,0,0]"
+                  style="z-index: 7;border-width:0px;"><img src="img/revolution/header_tablet.png" alt="" data-ww="['730px','730px','730px','730px']" data-hh="['520px','520px','520px','520px']" width="730" height="520" data-no-retina>
+                </div> -->
+
+                <!-- LAYER NR. 4 -->
+                <!-- <div class="tp-caption tp-resizeme rs-parallaxlevel-12" 
+                  id="slide-3238-layer-9" 
+                  data-x="['left','left','left','left']"
+                  data-hoffset="['134','134','-2','-57']" 
+                  data-y="['bottom','bottom','bottom','bottom']"
+                  data-voffset="['10','10','-7','-51']" 
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"                
+                  data-type="image" 
+                  data-basealign="slide" 
+                  data-responsive_offset="on"
+                  data-frames='[{"from":"y:bottom;rZ:90deg;","speed":1500,"to":"o:1;rZ:-30deg;","delay":1050,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                  data-textAlign="['left','left','left','left']"
+                  data-paddingtop="[0,0,0,0]"
+                  data-paddingright="[0,0,0,0]"
+                  data-paddingbottom="[0,0,0,0]"
+                  data-paddingleft="[0,0,0,0]"
+                  style="z-index: 8;border-width:0px;"><img src="img/revolution/header_pen.png" alt="" data-ww="['300px','300px','300px','300px']" data-hh="['500px','500px','500px','500px']" width="500" height="500" data-no-retina>
+                </div> -->
+
+                <!-- LAYER NR. 5 -->
+                <!-- <div class="tp-caption   tp-resizeme rs-parallaxlevel-7" 
+                  id="slide-3238-layer-7" 
+                  data-x="['right','right','right','right']"
+                  data-hoffset="['-84','-284','-300','-300']" 
+                  data-y="['bottom','bottom','bottom','bottom']"
+                  data-voffset="['-75','-75','-100','-122']" 
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"                
+                  data-type="image" 
+                  data-basealign="slide" 
+                  data-responsive_offset="on"
+                  data-frames='[{"from":"x:right;rZ:-65deg;","speed":1500,"to":"o:1;rZ:30deg;","delay":700,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                  data-textAlign="['left','left','left','left']"
+                  data-paddingtop="[0,0,0,0]"
+                  data-paddingright="[0,0,0,0]"
+                  data-paddingbottom="[0,0,0,0]"
+                  data-paddingleft="[0,0,0,0]"
+                  style="z-index: 12;border-width:0px;"><img src="img/revolution/object_macmouse_1.png" alt="" data-ww="['562px','562px','562px','562px']" data-hh="['562px','562px','562px','562px']" width="562" height="562" data-no-retina>
+                </div> -->
+
+                <!-- LAYER NR. 6 -->
+                <div class="tp-caption hero-text dark alt-font-3"
+                  data-x="center"
+                  data-y="center"
+                  data-textAlign="center"
+                  data-voffset="[-23]"
+                  data-hoffset="[0]"
+                  data-fontsize="[120,70,60,50]"
+                  data-lineheight="[80,60,50,40]"
+                  data-fontweight="300"
+                  data-whitespace="[nowrap, nowrap, nowrap, nowrap]"
+                  data-transform_idle="o:1;s:700"
+                  data-transform_in="sX:1.2;sY:1.2;opacity:0;s:1000;e:Power1.easeInOut;"
+                  data-transform_out="opacity:0;s:1000;e:Power1.easeInOut;"
+                  data-start="1000"
+                  data-elementdelay="0.01"><strong>freehand</strong>.io</strong>
+                </div>
+
+                <!-- LAYER NR. 7 BUTTON -->
+                <!-- <div class="tp-caption tp-resizeme"
+                  data-x="center"
+                  data-y="center"
+                  data-hoffset="0"
+                  data-voffset="[100, 100, 80, 60]"
+                  data-lineheight="[44]"
+                  data-frames='[{"from":"y:100px;rX:90deg;opacity:0;","speed":1500,"to":"o:1;","delay":1200,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                  data-elementdelay="0.01"
+                  data-linktoslide="next"><a href='#' class='btn btn-lg btn-color rounded'><span>Learn More</span></a>
+                </div> -->
+                <div class="tp-caption tp-resizeme"
+                  data-x="center"
+                  data-y="center"
+                  data-hoffset="0"
+                  data-voffset="[200, 100, 80, 60]"
+                  data-lineheight="[44]"
+                  data-frames='[{"from":"y:100px;rX:90deg;opacity:0;","speed":1500,"to":"o:1;","delay":1200,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                  data-elementdelay="0.01"
+                  data-linktoslide="next"><a href='#' class='btn btn-lg btn-color rounded'><span>Get Started</span></a>
+                </div>
+                
+               
+        
+              </li>
+
+            </ul>
+
+            <!-- <div class="local-scroll mobile-offset-0">
+              <a href="#intro" class="scroll-down dark">
+                <i class="fa fa-angle-down"></i>
+              </a>
+            </div> -->
+
+          </div>
+        </div>
+      </section> <!-- end rev slider -->
+  <!-- Process -->
+  <section class=" icon-boxes " id="process" style="margin-top: 10%">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 mb-50 animated-queue">
+            <div class="service-item-box style-5 arrow-next text-center">
+              <i class="icon-Eco-Bulb2"></i>
+              <div class="service-text">
+                <h3>Ideate</h3>
+                <p>Gaze is clean and elegant template with tons of features.</p>
+              </div>
+            </div>            
+          </div> <!-- end service item -->
+
+         
+
+          <div class="col-sm-4 mb-50 animated-queue">
+            <div class="service-item-box style-5 arrow-next text-center">
+              <i class="icon-Compose-Mail1"></i>
+              <div class="service-text">
+                <h3>  Design</h3>
+                <p>Gaze is clean and elegant template with tons of features.</p>
+              </div>  
+            </div>            
+          </div> <!-- end service item -->
+
+          <div class="col-sm-4 mb-50 animated-queue">
+            <div class="service-item-box style-5 text-center">
+              <i class="icon-Gear-2"></i>
+              <div class="service-text">
+                <h3>Develop</h3>
+                <p>Gaze is clean and elegant template with tons of features.</p>
+              </div>  
+            </div>            
+          </div> <!-- end service item -->
+        </div>
+      </div>
+
+    </section> <!-- end process -->
+    <hr style="color: #2c3e50"/> 
+      <!-- Promo Video-->
+      <!-- removed section-wrap-pb100*********************  -->
+      <section class="" id="intro">
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-md-4 " style="margin-top: 4% ; padding-left: 2%">
+              <div class="video-box animated-bottom">
+                <img style="margin-top: 8%" src="./img/canvas.gif">
+              </div>
+            </div>
+
+            <div class="col-md-4 "style="margin-top: 2%">
+              <div class="promo-video-info">
+                <h2>
+                <!-- <i class="fa fa-terminal" aria-hidden="true"></i> -->
+                Simple and effective way to create stunning websites
+                </h2>
+                <p class="lead">
+                </p>
+                <a href="#" class="btn btn-lg rounded btn-color"><span>Create Now</span></a>
+                <a href="#" class="btn btn-lg rounded btn-color" style="margin-left: 5%"><span>Instructions</span></a>
+
+
+              </div>
+            </div>
+            <div class="col-md-4" >
+                <div class="window animated-bottom">
+                    <div class="controls">
+                      <button
+                        class="buttons closeB"
+                        id="close"
+                        href="#"
+                        style="color: rgb(243, 59, 26)"
+                      ></button>
+      
+                      <button class="buttons maximize" href="#"></button>
+                      <button class="buttons minimize" href="#"></button>
+                      <div class="title">Freehand.io</div>
+                    </div>
+                    <div class="bash">
+                      <span id="span" style="color: yellowgreen"
+                        >[MyWebsite@freehand.io ~]: <b style="color: tomato">$</b>
+                      </span><br />
+                      <span class="type-it">Creating your website.........</span>
+                      
+                      
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <section class=" icon-boxes bg-light pb-100">  
+            
+          <div class="container">
+              <h1 class="uppercase"style="text-align:center ; margin:2%"> <strong>Steps to create the UI Sketch</strong> </h1>
+              <div class="col-md-12"></div>
+            <div class="row">
+                <div class="panel-group accordion mb-50" id="accordion">
+                    <div class="panel">
+                      <div class="panel-heading">
+                        <a
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapseOne"
+                          class="minus"
+                          >Super Flexible<span>&nbsp;</span>
+                        </a>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          We possess within us two minds. So far I have written only of the
+                          conscious mind. I would now like to introduce you to your second mind,
+                          the hidden and mysterious subconscious. Our subconscious mind contains
+                          such power.
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="panel">
+                      <div class="panel-heading">
+                        <a
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapseTwo"
+                          class="plus"
+                          >Awesome Theme<span>&nbsp;</span>
+                        </a>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          We possess within us two minds. So far I have written only of the
+                          conscious mind. I would now like to introduce you to your second mind,
+                          the hidden and mysterious subconscious. Our subconscious mind contains
+                          such power and complexity that it literally staggers the imagination.And
+                          finally the subconscious is the mechanism through which thought impulses
+                          which are repeated regularly with feeling and emotion are quickened,
+                          charged. Our subconscious mind contains such power and complexity that
+                          it literally staggers the imagination.
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="panel">
+                      <div class="panel-heading">
+                        <a
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapseThree"
+                          class="plus"
+                          >Retina Ready<span>&nbsp;</span>
+                        </a>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          We possess within us two minds. So far I have written only of the
+                          conscious mind. I would now like to introduce you to your second mind,
+                          the hidden and mysterious subconscious. Our subconscious mind contains
+                          such power and complexity that it literally staggers the imagination.And
+                          finally the subconscious is the mechanism through which thought impulses
+                          which are repeated regularly with feeling and emotion are quickened,
+                          charged. Our subconscious mind contains such power and complexity that
+                          it literally staggers the imagination.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+            </div>
+       
+          </div>
+        </section> <!-- end icon boxes -->
+   
+      <!-- Our Team -->
+      <section class=" our-team pb-100 pb-mdm-40">
+                            <div class="container">
+                    
+                              <div class="row heading-row">
+                                <div class="col-md-6 col-md-offset-3 text-center">
+                                  <h2 class="heading uppercase">Our Team</h2>
+                                  <p class="subheading">The visionaries....</p>
+                                </div>
+                              </div>
+                    
+                              <div class="row">
+                    
+                                <div class="col-sm-4 mb-40 animated-from-left">
+                                  <div class="team-wrap">
+                                    <div class="team-member">
+                                      <div class="team-img hover-trigger hover-2">
+                                        <img src="img/team/team_1.jpg" alt="">
+                                        <div class="hover-overlay" data-overlay="5">
+                                          <div class="social-icons nobase">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                          </div> 
+                                        </div>
+                                      </div>
+                                      <div class="team-details text-center">                
+                                        <h4 class="team-title uppercase">Atharva Udapure</h4>
+                                        <span>Co-founder</span> 
+                                      </div>                            
+                                    </div>
+                                  </div>
+                                </div> <!-- end team member -->
+                    
+                                <div class="col-sm-4 mb-40 animated-from-left">
+                                  <div class="team-wrap">
+                                    <div class="team-member">
+                                      <div class="team-img hover-trigger hover-2">
+                                        <img src="img/team/team_2.jpg" alt="">
+                                        <div class="hover-overlay" data-overlay="5">
+                                          <div class="social-icons nobase">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                          </div> 
+                                        </div>
+                                      </div>
+                                      <div class="team-details text-center">
+                                        <h4 class="team-title uppercase">Gaurav Sharma</h4>
+                                        <span>Co-founder</span>
+                                      </div>                                
+                                    </div>
+                                  </div>
+                                </div> <!-- end team member -->
+                    
+                                <div class="col-sm-4 mb-40 animated-from-left">
+                                  <div class="team-wrap">
+                                    <div class="team-member">
+                                      <div class="team-img hover-trigger hover-2">
+                                        <img src="img/team/team_3.jpg" alt="">
+                                        <div class="hover-overlay" data-overlay="5">
+                                          <div class="social-icons nobase">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                          </div> 
+                                        </div>
+                                      </div>
+                                      <div class="team-details text-center">
+                                        <h4 class="team-title uppercase">Nikhil Sahu</h4>
+                                        <span>Co-founder</span>
+                                      </div>                               
+                                    </div>
+                                  </div>
+                                </div> <!-- end team member -->
+                    
+                              </div>
+                              <div class="row">
+                                <div class="col-md-2 col-sm-2"></div>
+                                <div class="col-sm-4 mb-40 animated-from-left">
+                                    <div class="team-wrap">
+                                      <div class="team-member">
+                                        <div class="team-img hover-trigger hover-2">
+                                          <img src="img/team/team_3.jpg" alt="">
+                                          <div class="hover-overlay" data-overlay="5">
+                                            <div class="social-icons nobase">
+                                              <a href="#"><i class="fa fa-twitter"></i></a>
+                                              <a href="#"><i class="fa fa-facebook"></i></a>
+                                              <a href="#"><i class="fa fa-google-plus"></i></a>
+                                              <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div> 
+                                          </div>
+                                        </div>
+                                        <div class="team-details text-center">
+                                          <h4 class="team-title uppercase">Saket Gulhane</h4>
+                                          <span>Co-founder</span>
+                                        </div>                               
+                                      </div>
+                                    </div>
+                                  </div> <!-- end team member -->
+                                  <div class="col-sm-4 mb-40 animated-from-left">
+                                      <div class="team-wrap">
+                                        <div class="team-member">
+                                          <div class="team-img hover-trigger hover-2">
+                                            <img src="img/team/team_3.jpg" alt="">
+                                            <div class="hover-overlay" data-overlay="5">
+                                              <div class="social-icons nobase">
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                              </div> 
+                                            </div>
+                                          </div>
+                                          <div class="team-details text-center">
+                                            <h4 class="team-title uppercase">Saksham Madan </h4>
+                                            <span>Co-founder</span>
+                                          </div>                               
+                                        </div>
+                                      </div>
+                                    </div> <!-- end team member -->
+                              </div>
+                    
+                            </div>
+                          </section> <!-- end our team -->
+                          <!-- Icon Boxes -->
+         
+    
+      <!-- Footer Type-1 -->
+      <footer class="footer footer-type-1 bg-dark">
+        
+        <div class="bottom-footer">
+          <div class="container">
+            <div class="row">              
+
+         
+              <div class="col-sm-6 copyright text-right sm-text-center">
+                <span>
+                  2019 Freehand.io 
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div> <!-- end bottom footer -->
+      </footer> <!-- end footer -->
+
+      <div id="back-to-top">
+        <a href="#top"><i class="fa fa-angle-up"></i></a>
+      </div>
+
+    </div> <!-- end content wrapper -->
+  </main> <!-- end main wrapper -->
+
+  <!-- jQuery Scripts -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>  
+  <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script type="text/javascript" src="js/rev-slider.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+
+    
+</body>
+</html>

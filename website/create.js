@@ -8,6 +8,7 @@ var url2 = ser2 + imagelink;
 var sel;
 var myClass;
 var currSel;
+var imagelink;
 
 console.log(url);
 var gData;
@@ -152,7 +153,44 @@ $(".component_list").on("click", ".image", function() {
   var code = `  <p>
   <input type="number" placeholder="Enter height (in pixels)" id="img_ht" />
   <input type="number" placeholder="Enter width (in pixels)" id="img_wt" />
-  <input type="text" placeholder="Enter image URL"  id="img_url" />
+  <h4>Add Image<h4>
+  <div class="row">
+  <div class="col-md-6 col-xs-12 col-sm-6">
+    <div class="file-upload">
+      <div class="image-upload-wrap">
+        <input
+          class="file-upload-input"
+          type="file"
+          onchange="readURL(this);"
+          accept="image/*"
+        />
+        <div class="drag-text">
+          <h3>Drag and drop a file or select add Image</h3>
+        </div>
+      </div>
+      <div class="file-upload-content">
+        <img class="file-upload-image" src="#" alt="your image" />
+        <div class="image-title-wrap">
+          <button
+            type="button"
+            onclick="removeUpload()"
+            class="remove-image"
+          >
+            Remove <span class="image-title">Uploaded Image</span>
+          </button>
+        </div>
+      </div>
+      <button
+        class="file-upload-btn"
+        type="button"
+        onclick="$('.file-upload-input').trigger( 'click' )"
+      >
+        Add Image
+      </button>
+    </div>
+  </div>
+  </div>
+
 </p>`;
   $(".custom_list").html(code);
   //console.log(myClass);
@@ -201,7 +239,7 @@ $("#submit").click(function() {
         console.log(`Data entered: height-------->` + gData[i].height);
         gData[i].width = $("#img_wt").val();
         console.log(`Data entered: width-------->` + gData[i].width);
-        gData[i].imgurl = $("#img_url").val();
+        gData[i].imgurl = imagelink; //$("#img_url").val();
         console.log(`Data entered: imgurl-------->` + gData[i].imgurl);
       }
     }
@@ -210,4 +248,80 @@ $("#submit").click(function() {
   data = JSON.stringify(gData);
   console.log(data);
   localStorage.setItem("gdata", data);
+});
+
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $(".image-upload-wrap").hide();
+
+      $(".file-upload-image").attr("src", e.target.result);
+      $(".file-upload-content").show();
+
+      $(".image-title").html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+
+    var $files = $(input).get(0).files;
+
+    if ($files.length) {
+      // Reject big files
+      if ($files[0].size > $(this).data("max-size") * 1024) {
+        console.log("Please select a smaller file");
+        return false;
+      }
+
+      // Begin file upload
+      console.log("Uploading file to Imgur..");
+
+      // Replace ctrlq with your own API key
+      var apiUrl = "https://api.imgur.com/3/image";
+      var apiKey = "e48ab4fb905ea1b";
+
+      var settings = {
+        async: false,
+        crossDomain: true,
+        processData: false,
+        contentType: false,
+        type: "POST",
+        url: apiUrl,
+        headers: {
+          Authorization: "Client-ID " + apiKey,
+          Accept: "application/json"
+        },
+        mimeType: "multipart/form-data"
+      };
+
+      var formData = new FormData();
+      formData.append("image", $files[0]);
+      settings.data = formData;
+
+      // Response contains stringified JSON
+      // Image URL available at response.data.link
+      $.ajax(settings).done(function(response) {
+        console.log(response);
+        //var newData = JSON.parse(data).pri_tag;
+        var imagelink = JSON.parse(response).data.link;
+
+        console.log(JSON.parse(response).data.link);
+      });
+    }
+  } else {
+    removeUpload();
+  }
+}
+
+function removeUpload() {
+  $(".file-upload-input").replaceWith($(".file-upload-input").clone());
+  $(".file-upload-content").hide();
+  $(".image-upload-wrap").show();
+}
+$(".image-upload-wrap").bind("dragover", function() {
+  $(".image-upload-wrap").addClass("image-dropping");
+});
+$(".image-upload-wrap").bind("dragleave", function() {
+  $(".image-upload-wrap").removeClass("image-dropping");
 });

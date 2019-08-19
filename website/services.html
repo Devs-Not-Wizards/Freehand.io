@@ -43,9 +43,9 @@
     <style>
       .file-upload {
         background-color: #ffffff;
-        width: 600px;
+        width: 100%;
         margin: 0 auto;
-        padding: 20px;
+        padding: 5%;
       }
 
       .file-upload-btn {
@@ -185,61 +185,64 @@
           </div>
         </section>
         <!-- end page title -->
-        <div class="row">
-          <div class="col-md-6 col-xs-12 col-sm-6">
-            <div class="file-upload">
-              <div class="image-upload-wrap">
-                <input
-                  class="file-upload-input"
-                  type="file"
-                  onchange="readURL(this);"
-                  accept="image/*"
-                />
-                <div class="drag-text">
-                  <h3>Drag and drop a file or select add Image</h3>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-xs-12 col-sm-6">
+              <div class="file-upload">
+                <div class="image-upload-wrap">
+                  <input
+                    class="file-upload-input"
+                    type="file"
+                    onchange="readURL(this);"
+                    accept="image/*"
+                  />
+                  <div class="drag-text">
+                    <h3>Drag and drop a file or select add Image</h3>
+                  </div>
                 </div>
-              </div>
-              <div class="file-upload-content">
-                <img class="file-upload-image" src="#" alt="your image" />
-                <div class="image-title-wrap">
-                  <button
-                    type="button"
-                    onclick="removeUpload()"
-                    class="remove-image"
-                  >
-                    Remove <span class="image-title">Uploaded Image</span>
-                  </button>
+                <div class="file-upload-content">
+                  <img class="file-upload-image" src="#" alt="your image" />
+                  <div class="image-title-wrap">
+                    <button
+                      type="button"
+                      onclick="removeUpload()"
+                      class="remove-image"
+                    >
+                      Remove <span class="image-title">Uploaded Image</span>
+                    </button>
+                  </div>
                 </div>
+                <button
+                  class="file-upload-btn"
+                  type="button"
+                  onclick="$('.file-upload-input').trigger( 'click' )"
+                >
+                  Add Image
+                </button>
               </div>
-              <button
-                class="file-upload-btn"
-                type="button"
-                onclick="$('.file-upload-input').trigger( 'click' )"
-              >
-                Add Image
-              </button>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6" style="margin-top: 5%">
-            <p class="lead">
-              Upload a neat image with all the illustrations clearly visible.
-              Please use a black sketch pen preferably.
-            </p>
+            <div class="col-sm-1 col-md-1"></div>
+            <div class="col-xs-12 col-sm-5 col-md-5" style="margin-top: 5% ">
+              <p class="lead">
+                Upload a neat image with all the illustrations clearly visible.
+                Please use a black sketch pen preferably.
+              </p>
 
-            <div
-              class="tp-caption tp-resizeme"
-              data-x="center"
-              data-y="center"
-              data-hoffset="0"
-              data-voffset="[200, 100, 80, 60]"
-              data-lineheight="[44]"
-              data-frames='[{"from":"y:100px;rX:90deg;opacity:0;","speed":1500,"to":"o:1;","delay":1200,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-              data-elementdelay="0.01"
-              data-linktoslide="next"
-            >
-              <a href="./create.html" class="btn btn-lg btn-color rounded"
-                ><span>Customize</span></a
+              <div
+                class="tp-caption tp-resizeme"
+                data-x="center"
+                data-y="center"
+                data-hoffset="0"
+                data-voffset="[200, 100, 80, 60]"
+                data-lineheight="[44]"
+                data-frames='[{"from":"y:100px;rX:90deg;opacity:0;","speed":1500,"to":"o:1;","delay":1200,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-elementdelay="0.01"
+                data-linktoslide="next"
               >
+                <a href="./create.html" class="btn btn-lg btn-color rounded"
+                  ><span>Customize</span></a
+                >
+              </div>
             </div>
           </div>
         </div>

@@ -1,0 +1,5 @@
+//TO-DO
+Instructions
+Edit Textual Content
+Manage Image sizes
+Responsive UI

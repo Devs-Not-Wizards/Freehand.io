@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
+html {
+  height: 100%;
+}
+/*****************
+CODE MIRROR STYLES 
+*****************/
+.CodeMirror {
+  font-size: 14px !important;
+  background: #222249;
+  box-shadow: 2px 2px 10px #111139 inset;
+  font-family: "Source Code Pro", monospace;
+}
+.CodeMirror-cursor {
+  height: 17px !important;
+  margin-top: 4px !important;
+}
+.CodeMirror-gutters {
+  background: #333359;
+  border-right: 1px solid #333359;
+  box-shadow: 2px 0px 10px #111139;
+  margin-left: -1px;
+}
+.CodeMirror-sizer {
+  padding-top: 5px;
+  margin-left: 31px !important;
+  margin-bottom: -17px !important;
+  border-right-width: 13px !important;
+  min-height: 29px !important;
+  min-width: 7px !important;
+  padding-right: 20px !important;
+  padding-bottom: 0px !important;
+  padding-left: 5px !important;
+}
+.CodeMirror-line {
+  line-height: 1.7 !important;
+}
+.CodeMirror-linenumber {
+  color: #777aaa !important;
+  left: 0px !important;
+  width: 24px !important;
+  margin-left: -5px !important;
+}
+.CodeMirror-linenumbers {
+  width: 31px !important;
+}
+.cm-qualifier {
+  color: #eee !important;
+}
+.cm-property {
+  color: #9b87fd !important;
+}
+.cm-punctuation,
+.cm-unit,
+.cm-negative {
+  color: #e09142 !important;
+}
+.cm-string {
+  color: #ffa852 !important;
+}
+.cm-positive {
+  color: #6a51e6 !important;
+}
+.cm-def {
+  color: #eee !important;
+}
+.cm-variable {
+  /* 	color: #ccc !important; */
+  color: #6a51e6 !important;
+}
+.cm-variable-2,
+.cm-variable-3,
+.cm-string-2,
+.cm-url {
+  color: #6a51e6 !important;
+}
+.cm-tag {
+  color: #eee !important;
+}
+.cm-bracket,
+.cm-comment,
+.CodeMirror {
+  color: #777aaa !important;
+}
+.cm-string,
+.cm-atom,
+.cm-number {
+  color: #ffa1d5 !important;
+}
+.cm-keyword,
+.cm-operator,
+.cm-attribute {
+  color: #ff4aae !important;
+}
+.CodeMirror-cursor {
+  border-left: 1px solid #eee;
+}
+.CodeMirror-selected {
+  background: rgba(200, 200, 200, 0.1) !important;
+}
+.CodeMirror-activeline-background {
+  background: transparent !important;
+}
+.CodeMirror-focused .CodeMirror-activeline-background {
+  background: rgba(0, 0, 60, 0.1) !important;
+}
+.CodeMirror-matchingbracket {
+  color: inherit !important;
+}
+.CodeMirror-focused .CodeMirror-matchingbracket,
+.CodeMirror-focused .CodeMirror-matchingtag.cm-tag {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 2px;
+  padding-bottom: 3px;
+}
+.CodeMirror-focused .CodeMirror-matchingtag.cm-tag {
+  padding-bottom: 1px !important;
+}
+.CodeMirror-matchingtag,
+.CodeMirror-matchingtag.cm-bracket {
+  background: transparent !important;
+}
+.CodeMirror-focused .CodeMirror-matchingtag.cm-bracket {
+  background: transparent !important;
+}
+
+.cm-searching {
+  /* 	color: #eee !important; */
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+  padding: 0 5px;
+}
+
+/****************
+EDITOR SCROLL BAR
+****************/
+.CodeMirror-scrollbar-filler {
+  background: transparent;
+}
+.CodeMirror-vscrollbar-filler,
+.CodeMirror-hscrollbar-filler {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  border-radius: 0 0 5px 0;
+  z-index: 2;
+}
+.CodeMirror-vscrollbar-filler {
+  width: 10px;
+  top: 70px;
+}
+.CodeMirror-hscrollbar-filler {
+  left: 30px;
+  height: 10px;
+}
+/* width */
+.CodeMirror-vscrollbar::-webkit-scrollbar {
+  width: 6px !important;
+}
+.CodeMirror-hscrollbar::-webkit-scrollbar {
+  height: 6px !important;
+}
+/* Track */
+.CodeMirror-vscrollbar::-webkit-scrollbar-track,
+.CodeMirror-hscrollbar::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+/* Handle */
+.CodeMirror-vscrollbar::-webkit-scrollbar-thumb,
+.CodeMirror-hscrollbar::-webkit-scrollbar-thumb {
+  background: #111139 !important;
+  border-radius: 3px;
+}
+/* Handle on hover */
+.CodeMirror-vscrollbar::-webkit-scrollbar-thumb:hover,
+.CodeMirror-hscrollbar::-webkit-scrollbar-thumb:hover {
+  background: #11111f !important;
+}

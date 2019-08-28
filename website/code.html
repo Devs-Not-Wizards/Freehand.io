@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Generated Code | Freehand.io</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.35.0/codemirror.css"
+    />
+    <link rel="stylesheet" href="./codebox.css" />
+    <link rel="stylesheet" href="./code.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="widget" id="widget" data-widget="code">
+      <div class="widget-tab-list">
+        <div class="widget-tab" data-tab="1">
+          <label class="tab-text">main<span>.html</span></label>
+          <div class="tab-delete"></div>
+        </div>
+        <div class="widget-tab tab-active" data-tab="0">
+          <label class="tab-text">main<span>.js</span></label>
+          <div class="tab-delete"></div>
+        </div>
+        <div class="widget-tab" data-tab="2">
+          <label class="tab-text">main<span>.css</span></label>
+          <div class="tab-delete"></div>
+        </div>
+        <div class="add-tab"></div>
+      </div>
+      <div class="widget-inner panel-active" data-inner="0">
+        <div class="new-inner" data-language="js" data-tag="script">
+          <textarea class="editor" style="display: none;">
+//Put JS here</textarea
+          >
+          <div class="CodeMirror-vscrollbar-filler"></div>
+          <div class="CodeMirror-hscrollbar-filler"></div>
+        </div>
+      </div>
+      <div class="widget-inner" data-inner="1">
+        <div class="new-inner" data-language="html" data-tag="wrapper">
+          <textarea class="editor" id="mypanel" style="display: none;">
+          </textarea>
+          <div class="CodeMirror-vscrollbar-filler"></div>
+          <div class="CodeMirror-hscrollbar-filler"></div>
+        </div>
+      </div>
+      <div class="widget-inner" data-inner="2">
+        <div class="new-inner" data-language="css" data-tag="style">
+          <textarea class="editor" style="display: none;">
+            /* Put CSS here */
+			</textarea
+          >
+          <div class="CodeMirror-vscrollbar-filler"></div>
+          <div class="CodeMirror-hscrollbar-filler"></div>
+        </div>
+      </div>
+      <div class="preview">
+        <div class="resize-handle"></div>
+        <iframe></iframe>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">File Name</h5>
+            <div
+              class="modal-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></div>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="info-labels">File name:</label>
+              <input type="text" class="file-name-input" />
+              <label class="tab-type">.js</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn modal-close-btn"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn modal-save">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loader-div">
+      <ul class="loader-list">
+        <li class="loader-item"></li>
+        <li class="loader-item"></li>
+        <li class="loader-item"></li>
+        <li class="loader-item"></li>
+        <li class="loader-item"></li>
+      </ul>
+    </div>
+    <div class="tutorial-div"></div>
+
+    <div class="modal-code-callout" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Callout Dialog</h5>
+            <div
+              class="modal-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></div>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="info-labels">Callout Dialog: </label>
+              <input type="text" class="callout-dialog-input" />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn modal-close-btn"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn modal-save">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="goto">
+      <a href="https://codepen.io/Souleste/pen/RXebxO" target="_blank"
+        >Custom Theme</a
+      >
+    </button>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://codemirror.net/lib/codemirror.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.0/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.0/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.0/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.0/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.0/addon/selection/active-line.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.0/addon/edit/matchbrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.0/addon/edit/matchtags.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.0/addon/fold/xml-fold.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.0/mode/php/php.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.2/mode/clike/clike.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.2/addon/display/autorefresh.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.10.2/beautify-html.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.10.2/beautify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.10.2/beautify-css.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.2/addon/comment/comment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./code.js"></script>
+  </body>
+</html>

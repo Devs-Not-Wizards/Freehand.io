@@ -8,9 +8,9 @@ $.get("https://softechlab.herokuapp.com/code?data=" + data, function(data) {
   code = data;
   var x = data.toString();
 
-  var res = x.replace(/<plaintext>/g, "");
+  var res = x.replace(/<plaintext>/g, " ");
   console.log(res);
-  var r = '"' + res.toString() + '"';
+
   $("#code").text(res);
 });
 
@@ -18,8 +18,8 @@ var url = "https://softechlab.herokuapp.com/show?data=" + data;
 console.log(url);
 $("#frame").attr("src", url);
 $(document).ready(function() {
-  $("#code").click(function() {
-    alert("This paragraph was clicked.");
-    $("#frame").html(code);
-  });
+  // $("#code").click(function() {
+  //   alert("This paragraph was clicked.");
+  //   $("#frame").html(code);
+  // });
 });

@@ -8,9 +8,12 @@ $(function() {
     $.get("https://softechlab.herokuapp.com/code?data=" + cdata, function(
       cdata
     ) {
-      console.log(cdata);
+      var x = cdata.toString();
 
-      $("#mypanel").append(cdata);
+      var res = x.replace(/<plaintext>/g, "");
+      console.log(res);
+      var r = '"' + res.toString() + '"';
+      $("#mypanel").text(res);
     });
   });
 

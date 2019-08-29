@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./new_generate.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="browser">
+      <div class="browser__header">
+        <nav class="header__buttons">
+          <a href="" class="header__button"></a>
+          <a href="" class="header__button"></a>
+          <a href="" class="header__button"></a>
+        </nav>
+        <div class="header__center">
+          <nav class="header__history">
+            <a href="" class="header__back"></a>
+            <a href="" class="header__forward"></a>
+          </nav>
+          <div class="header__protocol">
+            https://
+          </div>
+          <input
+            class="header__input"
+            type="text"
+            placeholder="freehand.io/myWebsite"
+          />
+        </div>
+        <nav class="header__items">
+          <a href="">Home Page</a>
+        </nav>
+      </div>
+      <!-- browser header -->
+      <iframe
+        class="browser__content"
+        src=""
+        height="100%"
+        width="100%"
+        id="frame"
+      ></iframe>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </div>
+    <script src="./new_generate.js"></script>
+  </body>
+</html>

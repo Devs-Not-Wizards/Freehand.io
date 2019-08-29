@@ -8,39 +8,43 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="browser">
-      <div class="browser__header">
-        <nav class="header__buttons">
-          <a href="" class="header__button"></a>
-          <a href="" class="header__button"></a>
-          <a href="" class="header__button"></a>
-        </nav>
-        <div class="header__center">
-          <nav class="header__history">
-            <a href="" class="header__back"></a>
-            <a href="" class="header__forward"></a>
+    <!-- wrapper************************************  -->
+    <div>
+      <div class="browser">
+        <div class="browser__header">
+          <nav class="header__buttons">
+            <a href="" class="header__button1"></a>
+            <a href="" class="header__button2"></a>
+            <a href="" class="header__button3"></a>
           </nav>
-          <div class="header__protocol">
-            https://
+          <div class="header__center">
+            <nav class="header__history">
+              <a href="" class="header__back"></a>
+              <a href="" class="header__forward"></a>
+            </nav>
+            <div class="header__protocol">
+              https://
+            </div>
+            <input
+              class="header__input"
+              type="text"
+              placeholder="freehand.io/myWebsite"
+            />
           </div>
-          <input
-            class="header__input"
-            type="text"
-            placeholder="freehand.io/myWebsite"
-          />
+          <nav class="header__items">
+            <a href="">View Code</a>
+          </nav>
         </div>
-        <nav class="header__items">
-          <a href="">Home Page</a>
-        </nav>
+        <!-- browser header -->
+
+        <iframe
+          class="browser__content"
+          src=""
+          height="100%"
+          width="100%"
+          id="frame"
+        ></iframe>
       </div>
-      <!-- browser header -->
-      <iframe
-        class="browser__content"
-        src=""
-        height="100%"
-        width="100%"
-        id="frame"
-      ></iframe>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </div>
     <script src="./new_generate.js"></script>

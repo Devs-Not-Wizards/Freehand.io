@@ -32,11 +32,33 @@ body {
 .header__buttons {
   margin-left: 15px;
 }
-.header__button {
+.header__button1 {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  background: rgba(0, 0, 0, 0.1);
+  width: 15px;
+  height: 15px;
+  /* background: rgba(0, 0, 0, 0.1); */
+  background: red;
+
+  margin: 0 3px;
+  border-radius: 100%;
+}
+.header__button2 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  /* background: rgba(0, 0, 0, 0.1); */
+  background: rgb(255, 255, 0);
+
+  margin: 0 3px;
+  border-radius: 100%;
+}
+.header__button3 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  /* background: rgba(0, 0, 0, 0.1); */
+  background: rgb(106, 236, 106);
+
   margin: 0 3px;
   border-radius: 100%;
 }

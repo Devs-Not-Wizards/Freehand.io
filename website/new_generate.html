@@ -4,11 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/apple-touch-icon-114x114.png"
+    />
+
     <link rel="stylesheet" href="./new_generate.css" />
+    <link rel="stylesheet" href="./codestyle.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- wrapper************************************  -->
+    <!-- Preloader -->
+    <!-- <div class="loader-mask">
+      <div class="loader">
+        <div></div>
+        <div></div>
+      </div>
+    </div> -->
     <div>
       <div class="browser">
         <div class="browser__header">
@@ -32,7 +60,14 @@
             />
           </div>
           <nav class="header__items">
-            <a href="">View Code</a>
+            <button
+              type="button"
+              class="btn btn-light"
+              id="viewcode"
+              style="height: 30px; text-align: center;  "
+            >
+              View Code
+            </button>
           </nav>
         </div>
         <!-- browser header -->
@@ -47,6 +82,31 @@
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </div>
+    <div class="window">
+      <div class="window-header">
+        <div class="action-buttons"></div>
+        <select class="language">
+         
+          <option value="markup" selected>HTML</option>
+          <option value="javascript" >JavaScript</option>
+          <option value="php">PHP</option>
+        </select>
+      </div>
+      <div class="window-body">
+        <textarea id="code" class="code-input"></textarea>
+        <pre class="code-output">
+          <code class="language-markup">
+            
+          </code>
+        </pre>
+      </div>
+    </div>
+    
+  </main>
+  <!-- partial -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js'></script>
+  <script  src="./codescript.js"></script>
     <script src="./new_generate.js"></script>
   </body>
 </html>

@@ -25,7 +25,8 @@
     />
 
     <link rel="stylesheet" href="./new_generate.css" />
-    <link rel="stylesheet" href="./codestyle.css" />
+    <!-- <link rel="stylesheet" href="./codestyle.css" /> -->
+    <!-- <script  src="./codescript.js"></script> -->
     <title>Document</title>
   </head>
   <body>
@@ -45,9 +46,9 @@
       <div class="browser">
         <div class="browser__header">
           <nav class="header__buttons">
-            <a href="" class="header__button1"></a>
-            <a href="" class="header__button2"></a>
-            <a href="" class="header__button3"></a>
+            <a href="#" class="header__button1"></a>
+            <a href="#" class="header__button2"></a>
+            <a href="#" class="header__button3"></a>
           </nav>
           <div class="header__center">
             <nav class="header__history">
@@ -86,31 +87,17 @@
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </div>
-    <div class="window">
-      <div class="window-header">
-        <div class="action-buttons"></div>
-        <select class="language">
-         
-          <option value="markup" selected>HTML</option>
-          <option value="javascript" >JavaScript</option>
-          <option value="php">PHP</option>
-        </select>
-      </div>
-      <div class="window-body">
-        <textarea id="code" class="code-input"></textarea>
-        <pre class="code-output">
-          <code class="language-markup">
-            
-          </code>
-        </pre>
-      </div>
-    </div>
-    
+<!----editor-->
   </main>
   <!-- partial -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js'></script>
-  <script  src="./codescript.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/xml/xml.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/css/css.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/javascript/javascript.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/htmlmixed/htmlmixed.js"></script>
+ 
     <script src="./new_generate.js"></script>
   </body>
 </html>

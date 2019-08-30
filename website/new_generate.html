@@ -23,17 +23,13 @@
       sizes="114x114"
       href="img/apple-touch-icon-114x114.png"
     />
-
+    <link rel="stylesheet" href="./codepageACE.css" />
     <link rel="stylesheet" href="./new_generate.css" />
     <!-- <link rel="stylesheet" href="./codestyle.css" /> -->
     <!-- <script  src="./codescript.js"></script> -->
     <title>Document</title>
   </head>
   <body>
-
-
-
-    
     <!-- wrapper************************************  -->
     <!-- Preloader -->
     <!-- <div class="loader-mask">
@@ -87,17 +83,33 @@
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </div>
-<!----editor-->
-  </main>
-  <!-- partial -->
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js'></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/xml/xml.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/css/css.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/javascript/javascript.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/htmlmixed/htmlmixed.js"></script>
- 
+
+    <!----editor-->
+    <div class="window">
+      <div class="window-header">
+        <div class="action-buttons"></div>
+        <select class="language">
+          <!-- <option value="javascript" >JavaScript</option> -->
+          <option value="markup" selected>HTML</option>
+        </select>
+      </div>
+
+      <div id="editor"></div>
+      <!-- this works using xmp and NOT when using div's! -->
+      <xmp id="my_html_hidden"></xmp>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.01/ace.js"></script>
+    <script src="./codepageACE.js"></script>
+    <!-- partial -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/xml/xml.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/css/css.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/javascript/javascript.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/htmlmixed/htmlmixed.js"></script>
+
     <script src="./new_generate.js"></script>
   </body>
 </html>

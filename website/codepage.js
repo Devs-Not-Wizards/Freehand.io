@@ -12,8 +12,12 @@
 var code;
 var htmlEditor = CodeMirror.fromTextArea(document.getElementById("code"), {
   lineNumbers: true,
-  mode: "htmlmixed"
+  mode: "htmlmixed",
   // theme: 'default',
+  tabSize: 5,
+  lineNumbers: true,
+  firstLineNumber: 50,
+  extraKeys: { "Ctrl-Space": "autocomplete" }
 });
 
 var data = localStorage.getItem("gdata");
@@ -31,5 +35,3 @@ $.get("https://softechlab.herokuapp.com/code?data=" + data, function(data) {
   htmlEditor.setValue(res);
   $("#code").text(res);
 });
-
-document.getElementsByClassName(" CodeMirror-line ").value = "jiggg";

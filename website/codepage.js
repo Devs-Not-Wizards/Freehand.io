@@ -16,7 +16,7 @@ var htmlEditor = CodeMirror.fromTextArea(document.getElementById("code"), {
   // theme: 'default',
   tabSize: 5,
   lineNumbers: true,
-  firstLineNumber: 50,
+
   extraKeys: { "Ctrl-Space": "autocomplete" }
 });
 

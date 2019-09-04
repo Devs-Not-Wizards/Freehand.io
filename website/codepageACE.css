@@ -24,14 +24,14 @@ html {
   margin: auto;
   padding: 0 20px;
   width: 100%;
-  max-width: 970px;
-  height: 300px;
+  max-width: 1970px;
+  height: 350px;
 }
 #my_html_hidden {
   display: none;
 }
 .window {
-  width: 647px;
+  width: 100%;
   background: GhostWhite;
   border-radius: 0.3rem;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);

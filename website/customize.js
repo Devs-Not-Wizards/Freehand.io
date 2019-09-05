@@ -95,10 +95,18 @@ $.getJSON(url, function(data) {
   console.log(data);
   var text;
   for (i = 0; i < data.length; i++) {
-    text += `<li>Component &nbsp
-              ${data[i].type}&nbsp ID:
-              ${data[i].id}
-              <button class="${data[i].type}" id="${data[i].id}">select</button>
+    text += `<li>Component: &nbsp
+              <span style="color:#23c495;font-weight: bold">${data[i].type}</span>&nbsp ID:
+              <span style="color:#23c495;font-weight: bold">${data[i].id}</span>
+              <button class="${data[i].type}" id="${data[i].id}" style=" background-color: #23c495;
+              border: none;
+              color: white;
+              padding: 10px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 12px;
+              margin: 4px 6px;border-radius: 30px;">Select</button>
               <br/>
               <br/>
               </li>`;
@@ -287,7 +295,11 @@ $(".component_list").on("click", ".image", function() {
 
 $("#submit").click(function() {
   sel = myClass;
-  alert(`You have selected` + sel);
+  if (sel == "undefined") {
+    alert(`Select any Component`);
+  } else {
+    alert(sel + `  Component Added`);
+  }
   //POST request here
   // console.log(`Global Access--------->` + gData[0].top);
   for (i = 0; i < gData.length; i++) {

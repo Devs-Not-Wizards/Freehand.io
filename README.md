@@ -9,7 +9,14 @@
 </p>
 
 
+<div align="center">
+  
 ![alt text](https://img.shields.io/badge/-Machine%20Learning%20-lightgrey?style=for-the-badge) 
 ![alt text](https://img.shields.io/badge/-Python-brightgreen?style=for-the-badge)
+![alt text](https://img.shields.io/badge/-Flask-green?style=for-the-badge)
+![alt text](https://img.shields.io/badge/-Node.JS-brightgreen?style=for-the-badge)
+![alt text](https://img.shields.io/badge/-Darknet-lightgray?style=for-the-badge)
+![alt text](https://img.shields.io/badge/-YOLO-yellow?style=for-the-badge)
 
+</div>
 

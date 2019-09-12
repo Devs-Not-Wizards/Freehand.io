@@ -20,3 +20,18 @@
 
 </div>
 
+--------------------------------
+
+## Demo
+
+<p align="center">
+ <img height=350px  src="./demo.gif" >
+</p
+  
+## Authors
+
+- Atharva Udapure - [atharvau](https://github.com/atharvau)
+- Nikhil Sahu - [nikhildsahu](https://github.com/nikhildsahu)
+- Gaurav Sharma - [gauravsharma-gs](https://github.com/gauravsharma-gs)
+- Saket Gulhane - [th-10](https://github.com/th-10)
+- Saksham Madan - [sakshammadan](https://github.com/sakshammadan)

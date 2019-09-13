@@ -3,7 +3,7 @@
 <p align="center">
 <img height=100px src="./website/img/ourlogo.png" />  
 <h1 align="center"> Freehand IO </h1>
-<h4 align="center">:boom:An intuitive platform to create Website Frontend using Hand Drawn:pencil2: Sketches. </h4>
+<h4 align="center">:boom: An intuitive platform to create Website Frontend using Hand Drawn:pencil2: Sketches. </h4>
 <h4 align="center">Live @ <a href="https://freehand.ml/">https://freehand.ml/</a>  </h4>
 
 </p>
@@ -64,7 +64,7 @@
 ## Demo
 
 <p align="center">
- <img height=350px  src="./demo.gif" >
+ <img height=350px  src="https://github.com/nikhildsahu/Freehand.io/blob/master/demo.gif" >
 </p>
 
 ----------------------------------------------------- 

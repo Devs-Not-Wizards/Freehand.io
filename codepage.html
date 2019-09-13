@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML editor</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.css"
+    />
+    <link rel="stylesheet" href="./codepage.css" />
+
+    <link rel="stylesheet" href="addon/hint/show-hint.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <section>
+      <h1>CODE MIRROR</h1>
+      <div class="window">
+        <div class="window-header">
+          <div class="action-buttons"></div>
+          <select class="language">
+            <!-- <option value="javascript" >JavaScript</option> -->
+            <option value="markup" selected>HTML</option>
+          </select>
+        </div>
+        <div class="code-container">
+          <textarea id="code" class="codeinsert"> </textarea>
+        </div>
+      </div>
+    </section>
+    <!-- partial -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/xml/xml.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/css/css.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/javascript/javascript.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="./codepage.js"></script>
+    <script src="addon/hint/show-hint.js"></script>
+    <script src="addon/hint/css-hint.js"></script>
+  </body>
+</html>

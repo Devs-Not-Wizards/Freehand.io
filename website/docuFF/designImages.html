@@ -7,12 +7,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,600%7COpen+Sans:400,400i,700%7CNoto+Serif:400i"
       rel="stylesheet"
     />
-    <title>Samples | Freehand.io</title>
-    <!-- Description -->
-    <meta name="description" content=" Create websites just with Drawings!" />
 
-    <link rel="stylesheet" href="./codepageACE.css" />
-    <link rel="stylesheet" href="./new_generate.css" />
     <!-- Css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
@@ -22,6 +17,20 @@
     <link rel="stylesheet" href="css/sliders.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/colors/mint.css" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/apple-touch-icon-114x114.png"
+    />
 
     <link
       rel="stylesheet"
@@ -34,11 +43,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="../img/ourlogo.png" />
-    <link rel="apple-touch-icon" href="../img/ourlogo.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="../img/ourlogo.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="../img/ourlogo.png" />
+
     <style>
       * {
         box-sizing: border-box;
@@ -60,6 +65,7 @@
       .column img {
         opacity: 0.8;
         cursor: pointer;
+        margin-left: 40px;
       }
 
       .column img:hover {
@@ -110,147 +116,167 @@
       h5 {
         color: #159897;
       }
+      .button {
+        background-color: #23c495; /* Green */
+        border-radius: 15px;
+        border: none;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
     <div style="text-align:center">
       <h1>Sample Designs</h1>
-      <h5>Click on the images below:</h5>
+      <h5>
+        Click on the images below:<a href="../index.html">
+          <button class="button float-right">Home</button>
+        </a>
+      </h5>
     </div>
+    <br />
+    <br />
 
     <div class="row">
       <!-- ///////////////////////////////////// -->
 
       <div class="col-sm-6">
-        <div class="container m-5 pb-5 ">
+        <div class="container m-4 pb-4 ">
           <span
             onclick="this.parentElement.style.display='none'"
             class="closebtn"
             >&times;</span
           >
-          <img id="expandedImg" class="image-responsive" style="width:70% " />
+          <img id="expandedImg" class="image-responsive" style="width:80% " />
           <div id="imgtext"></div>
         </div>
       </div>
 
       <!-- //////////////////////////////////////////////////////// -->
       <div class="col-sm-6">
-        <!-- The four columns -->
-        <br />
-        <br />
-        <div class="row">
-          <div class="column">
-            <img
-              src="docImages/30.jpg"
-              class="image-responsive"
-              alt="img1"
-              style="width:60%"
-              onclick="myFunction(this);"
-            />
-          </div>
-          <div class="column">
-            <img
-              src="docImages/29.jpg"
-              class="image-responsive"
-              alt="img2"
-              style="width:60%"
-              onclick="myFunction(this);"
-            />
-          </div>
-          <div class="column">
-            <img
-              src="docImages/26.jpg"
-              class="image-responsive"
-              alt="img3"
-              style="width:60%"
-              onclick="myFunction(this);"
-            />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="column">
-            <img
-              src="docImages/28.jpg"
-              alt="img4"
-              class="image-responsive"
-              style="width:60%"
-              onclick="myFunction(this);"
-            />
+        <center>
+          <!-- The four columns -->
+          <br />
+          <br />
+          <div class="row">
+            <div class="column">
+              <img
+                src="docImages/30.jpg"
+                class="image-responsive"
+                alt="img1"
+                style="width:60%"
+                onclick="myFunction(this);"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="docImages/29.jpg"
+                class="image-responsive"
+                alt="img2"
+                style="width:60%"
+                onclick="myFunction(this);"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="docImages/26.jpg"
+                class="image-responsive"
+                alt="img3"
+                style="width:60%"
+                onclick="myFunction(this);"
+              />
+            </div>
           </div>
 
-          <div class="column">
-            <img
-              src="docImages/27.jpg"
-              class="image-responsive"
-              alt="img5"
-              style="width:60%"
-              onclick="myFunction(this);"
-            />
+          <div class="row">
+            <div class="column">
+              <img
+                src="docImages/28.jpg"
+                alt="img4"
+                class="image-responsive"
+                style="width:60%"
+                onclick="myFunction(this);"
+              />
+            </div>
+
+            <div class="column">
+              <img
+                src="docImages/27.jpg"
+                class="image-responsive"
+                alt="img5"
+                style="width:60%"
+                onclick="myFunction(this);"
+              />
+            </div>
+
+            <div class="column">
+              <img
+                src="docImages/25.jpg"
+                class="image-responsive"
+                alt="img5"
+                style="width:60%"
+                onclick="myFunction(this);"
+              />
+            </div>
           </div>
 
-          <div class="column">
-            <img
-              src="docImages/25.jpg"
-              class="image-responsive"
-              alt="img5"
-              style="width:60%"
-              onclick="myFunction(this);"
-            />
-          </div>
-        </div>
+          <div class="row">
+            <div class="column">
+              <img
+                src="docImages/24.jpg"
+                alt="img4"
+                class="image-responsive"
+                style="width:60%"
+                onclick="myFunction(this);"
+              />
+            </div>
 
-        <div class="row">
-          <div class="column">
-            <img
-              src="docImages/24.jpg"
-              alt="img4"
-              class="image-responsive"
-              style="width:60%"
-              onclick="myFunction(this);"
-            />
-          </div>
+            <div class="column">
+              <img
+                src="docImages/23.jpg"
+                class="image-responsive"
+                alt="img5"
+                style="width:60%"
+                onclick="myFunction(this);"
+              />
+            </div>
 
-          <div class="column">
-            <img
-              src="docImages/23.jpg"
-              class="image-responsive"
-              alt="img5"
-              style="width:60%"
-              onclick="myFunction(this);"
-            />
+            <div class="column">
+              <img
+                src="docImages/22.jpg"
+                class="image-responsive"
+                alt="img5"
+                style="width:60%"
+                onclick="myFunction(this);"
+              />
+            </div>
           </div>
-
-          <div class="column">
-            <img
-              src="docImages/22.jpg"
-              class="image-responsive"
-              alt="img5"
-              style="width:60%"
-              onclick="myFunction(this);"
-            />
+          <div class="row">
+            <div class="column">
+              <img
+                src="docImages/21.jpg"
+                alt="img4"
+                class="image-responsive"
+                style="width:60%"
+                onclick="myFunction(this);"
+              />
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <img
-              src="docImages/21.jpg"
-              alt="img4"
-              class="image-responsive"
-              style="width:60%"
-              onclick="myFunction(this);"
-            />
-          </div>
-        </div>
+        </center>
       </div>
       <!-- //////////////////////////////////////////////// -->
     </div>
 
     <script>
-      var expandImg = document.getElementById("expandedImg");
-      var imgText = document.getElementById("imgtext");
-      expandImg.src = "docImages/25.jpg";
-      imgText.innerHTML = "img1";
       function myFunction(imgs) {
         var expandImg = document.getElementById("expandedImg");
         var imgText = document.getElementById("imgtext");

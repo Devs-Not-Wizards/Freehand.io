@@ -1,0 +1,156 @@
+::-moz-selection { color: #fff; background: #1abcb0; }
+::-webkit-selection { color: #fff; background: #1abcb0; }
+::selection { color: #fff; background: #1abcb0; }
+
+a,
+a:focus,
+blockquote > span,
+.blockquote-style-1,
+.dropcap.style-1,
+.bullets li:before,
+.arrows i,
+.checks i,
+.navbar-nav > li > a:hover,
+.navbar-nav > .active > a,
+.navigation.scrolling .navbar-nav > li > a:hover,
+.navigation.scrolling .navbar-nav > .active > a,
+.navigation.scrolling .navbar-nav > .active > a:focus,
+.navigation.scrolling .navbar-nav > .active > a:hover,
+.navbar-nav > .open > a,
+.navbar-nav > .open > a:focus,
+.navbar-nav > .open > a:hover,
+.nav-right.menu-socials a:hover,
+.navigation.sticky .nav-btn-holder .btn:hover span,
+.mobile-links li > a:hover,
+.nav-cart-title > a:hover,
+.nav-register a:hover,
+.sidenav a:hover,
+.nav-item-submenu li a:hover,
+.overlay-menu ul li.active > a,
+.overlay-menu ul li a:hover,
+#typed,
+.testimonials .testimonial a,
+.features-list i,
+#tweets .tweet a:hover,
+.service-tabs .nav.nav-tabs > li.active a i,
+.time-period,
+.profile table td a:hover,
+.contact-info a:hover,
+.entry-meta li a:hover,
+.entry-title a:hover,
+.entry .blockquote-style-1 p > a:hover,
+.pagination .current,
+.widget.categories ul li a:hover,
+.work-description h3 a:hover,
+.project-nav li a:hover,
+.service-item-box.style-2 i,
+.service-item-box.style-4 i,
+.service-item-box.style-5 i,
+.service-item-box.style-7 i,
+.service-item-box.arrow-next:after,
+.lead-heading strong,
+.accordion .panel-heading > a.minus,
+.nav.nav-tabs > li.active > a,
+.nav.nav-tabs > li.active > a:hover,
+.nav.nav-tabs > li.active > a:focus,
+.nav.nav-tabs > li > a:hover,
+.nav.nav-tabs > li > a:focus,
+.statistic.with-icon i,
+.product-details .product-title:hover,
+.product-list-widget a:hover,
+.single-product .add-to-wishlist a:hover,
+.product_meta span a:hover,
+.shop_table .product-name > a:hover,
+.portfolio-filter.style-2 a.active,
+.tp-caption.address i,
+.tp-caption.phone i,
+.tp-caption.email i,
+.tp-caption.email a:hover {
+  color: #1abcb0;
+}
+
+.bg-color,
+.loader div,
+.dropcap.style-2,
+.highlight,
+.hero-landing-bg,
+.newsletter .newsletter-submit.btn,
+header.transparent .navigation.scrolling #nav-icon:hover span,
+.navigation.sticky .nav-btn-holder .btn,
+.nav-cart-remove:hover,
+.navbar-toggle:focus .icon-bar, .navbar-toggle:hover .icon-bar,
+#back-to-top:hover,
+.pagination a:hover,
+.tags a:hover,
+.tags.light a:hover,
+.service-item-box.style-3 .icon-holder,
+.pricing-table.best:before,
+.progress-bar,
+.accordion .panel-heading > a > span,
+.nav.nav-tabs > li.active:before,
+.btn.btn-transparent:hover,
+.btn.btn-white:hover,
+.btn.btn-stroke:hover,
+.btn.btn-color,
+.btn.btn-light:hover,
+.social-icons:not(.colored) a:hover,
+.newsletter-submit.btn:hover,
+.product-img .product-quickview:hover,
+.product-img .product-actions a:hover,
+.ui-slider .ui-slider-range,
+.product-remove .remove:hover,
+.owl-page.active span,
+.flickity-page-dots .dot.is-selected,
+.nav-cart-badge {
+  background-color: #1abcb0;
+}
+
+.btn.btn-color:hover {
+  background-color: #169d93;
+}
+
+.work-item.hover-6 .hover-overlay {
+  background-color: rgba(26,188,176,.75);
+}
+
+
+.bottom-line:after,
+.blockquote-style-2,
+.navigation.sticky .nav-btn-holder .btn:hover,
+.underline-link:after,
+.contact-form.style-2 textarea:focus,
+.pagination .current,
+.widget.search .searchbox:focus,
+.portfolio-filter.style-2 a.active,
+.tabs-bb .nav.nav-tabs > li.active > a,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  border-color: #1abcb0;
+}
+
+
+@media (max-width: 991px) {
+  header.transparent .navbar-nav > .active > a,
+  header.transparent .navbar-nav > .active > a:focus,
+  header.transparent .navbar-nav > .active > a:hover,
+  header.transparent .navbar-nav > li > a:hover,
+  header.transparent .navbar-nav > li > a:focus {
+    color: #1abcb0;
+  }
+
+  .nav-btn-holder .btn.btn-white {
+  	background-color: #1abcb0;
+  }
+}

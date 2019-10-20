@@ -1,0 +1,659 @@
+/*-------------------------------------------------------*/
+/* Portfolio
+/*-------------------------------------------------------*/
+
+.works-grid.grid-5-col .work-item { width: 20%; }
+.works-grid.grid-4-col .work-item { width: 25%; }
+.works-grid.grid-3-col .work-item { width: 33.333%; }
+.works-grid.grid-2-col .work-item { width: 50%; }
+.works-grid.small-gutter { margin-left: 4px; margin-right: 4px; }
+.works-grid.small-gutter .work-item { padding: 0 4px; }
+.works-grid.gutter .work-item { padding: 0 15px; }
+.works-grid.no-gutter .work-item { padding: 0; }
+.works-grid.small-gutter .work-container { margin-bottom: 8px; }
+.works-grid.small-gutter.with-title .work-container { margin-bottom: 30px; }
+.works-grid.no-gutter .work-img { border-radius: 0; }
+
+.flickity-slider-wrap.items-4 .work-item {
+  width: 25%;
+}
+
+.flickity-slider-wrap.items-3 .work-item {
+  width: 33.333%;
+}
+
+#showcases-slider {
+
+  .work-item  {
+    width: 60%;
+    margin: 0 20px;
+    box-shadow: 0px 1px 4px 0px rgba( 25, 27, 31, .10 );
+
+    &.is-selected {
+      box-shadow: 0px 10px 20px 0px rgba( 25, 27, 31, .10 );
+    }
+  }
+
+  .flickity-viewport {
+    overflow: visible;
+  }
+
+}
+
+
+
+
+.flickity-slider-wrap.with-spacing {
+  margin: 0 -8px;
+
+  .gallery-cell {
+    padding: 0 8px;
+  }
+}
+
+#slider-3-items .work-item {
+  width: 33.333%;
+  padding: 0 15px;
+}
+
+#photography-slider img {
+  padding: 0 2px;
+  height: 780px;
+  max-width: none;
+
+  @media (max-width: 991px) {
+    height: 400px;
+  }
+}
+
+#slider-single .work-item {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.owl-carousel .work-container,
+.gallery-cell .work-container,
+.works-grid.no-gutter .work-container {
+  margin-bottom: 0;
+}
+
+.portfolio-filter {
+  margin-bottom: 50px;
+  font-size: 12px;
+
+  &.style-2 {
+    .portfolio-filter-wrap {
+      display: inline-block;
+      border-bottom: 1px solid $border-color;
+    }
+
+    a {
+      padding: 0 20px 10px !important;
+      margin-bottom: -1px;
+      color: $heading-color;
+    }
+
+    a.active {
+      border-bottom: 1px solid $main-color;
+    }
+  }  
+
+  a {
+    display: inline-block;
+    font-family: $heading-font;
+    font-weight: 700;
+    padding: 0 10px;
+    color: lighten($text-color, 30%);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    &.active,
+    &:hover {
+      color: $heading-color;
+    }
+  } 
+}
+
+.work-container {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.work-item {
+  position: relative;
+  float: left;
+
+  &.hover-1 {
+    .work-description {
+      background-color: #fff;
+      text-align: center;
+      color: $heading-color;
+      top: auto;
+      bottom: 0;
+      @include transform (translateY(100%));
+      @include transition (.2s cubic-bezier(0.43, 0.07, 0.61, 0.95));
+
+      span {
+        color: $text-color;
+      }
+    }
+
+    .work-img img {
+      @include transition (.2s cubic-bezier(0.43, 0.07, 0.61, 0.95));
+    }
+
+    &:hover {
+      .work-description {
+        @include transform (translateY(0));
+      }
+
+      img {
+        @include transform (translateY(-70px));
+      }
+    }
+  }
+
+  &.hover-2 {
+    .work-description {
+      top: 0;
+      padding: 30px;
+      @include transform (translateX(-50%));
+    }
+
+    &:hover .work-description {
+      @include transform (translateX(0));
+    }
+  }
+
+  &.hover-3 {
+    .work-description {
+      top: 55%;
+      text-align: center;
+      @include transform (translateY(-50%));
+    }
+
+    &:hover .work-description {
+      top: 50%;
+    }
+  }
+
+  &.hover-4 {
+    .hover-overlay {
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      width: auto;
+      height: auto;
+      @include transform(scale(.7,.7));
+    }
+
+    &:hover .hover-overlay {
+      @include transform(scale(1,1));
+    }
+
+    &:hover .work-img img {
+      @include transform(scale(1.2,1.2));
+    }
+
+    .work-description {
+      text-align: center;
+    }
+  }
+
+  &.hover-5 {
+    .hover-overlay {
+      text-align: center;      
+    }
+
+    .work-description {
+      top: 55%;
+    }
+
+    &.hover-blue .hover-overlay {
+      background-color: ( rgba(#23abc4, .9));
+    }
+    &.hover-green .hover-overlay {
+      background-color: ( rgba(#4be1ce, .9));
+    }
+    &.hover-pink .hover-overlay {
+      background-color: ( rgba(#de455a, .9));
+    }
+    &.hover-violet .hover-overlay {
+      background-color: ( rgba(#6060d9, .9));
+    }
+    &.hover-orange .hover-overlay {
+      background-color: ( rgba(#ea793b, .9));
+    }
+
+    &:hover .work-description {
+      top: 50%;
+    }
+  }
+
+  &.hover-6 {
+    .work-description {
+      top: 0;
+      padding: 30px;
+      @include transform (translateX(-10%));
+    }
+
+    &:hover .work-description {
+      @include transform (translateX(0));
+    }
+
+    .hover-overlay {
+      background-color: rgba($main-color, .75);
+    }
+  }
+
+  &.hover-2:hover .work-img img,
+  &.hover-3:hover .work-img img {
+    @include transform(scale(1.3,1.3));
+  }
+
+  &:hover .project-icons {
+    top: 42%;
+  }
+}
+
+.work-img {
+  position: relative;
+  overflow: hidden;  
+  z-index: 1;
+
+  img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    @include transition ( .3s cubic-bezier(0.43, 0.07, 0.61, 0.95));
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  &.rounded {
+    border-radius: 4px;
+  }
+
+  & > a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.hover-overlay .work-description {
+  top: 50%;
+  bottom: auto;
+  color: #fff;
+  @include transform (translateY(-50%));
+
+  h3,
+  span {
+    color: inherit;
+  }
+}
+
+.work-description {
+  padding: 14px 20px;
+  width: 100%;
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  @include transition ( .3s cubic-bezier(0.43, 0.07, 0.61, 0.95));
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 2px;
+
+    a:hover {
+      color: $main-color;
+    }
+  }
+
+  & > span {
+    color: $text-color;
+    font-size: 13px;
+  }
+
+  i {
+    font-size: 40px;
+  }
+}
+
+
+// With Title
+.works-grid.with-title {
+
+  .work-description {
+    position: relative;
+    bottom: auto;
+    padding: 20px 0 0;
+  }
+
+  .work-item:hover .work-img img {
+    @include transform (none);
+  }
+
+  .work-item:hover .project-icons {
+    top: 50%;
+    @include transform (translateY(-50%));
+    margin-top: 0;
+  }
+
+  .work-item .work-description h3 {
+    font-size: 16px; 
+    letter-spacing: normal;
+  }
+
+  .work-item:hover .project-icons {
+    top: calc(50% - 44px);
+  }
+}
+
+// Project Icons
+.project-icons {
+  position: absolute;
+  top: 36%;
+  width: 100%;
+  text-align: center;
+  @include transform (translateY(-50%));
+  @include transition (.2s cubic-bezier(0.43, 0.07, 0.61, 0.95));
+
+  & a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin: 0 3px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    @include transition ($all);
+
+    &:hover {
+      opacity: .85;
+    }
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Masonry
+/*-------------------------------------------------------*/
+
+#masonry-grid {
+  .work-item.quarter {
+    width: 25%;
+    float: left;
+  }
+
+  .work-item.half {
+    width: 50%;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Oslo Portfolio Tiles
+/*-------------------------------------------------------*/
+
+.work-item-description {
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.work-description-inner {
+  position: absolute;
+  padding: 0 50px;
+
+  h3 {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .bottom-line:after {
+    border-color: #c8c8c8;
+    margin: 16px auto 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.grid-tiles .work-item-description:before {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  margin-left: -13px;
+  z-index: 1;
+  background-color: #fff;
+  @include transform (rotate(-45deg));
+}
+
+@media (min-width: 768px) {
+  .grid-tiles .work-item:nth-child(2n) .work-container {
+    @include transform (translateY(100%));
+  }
+
+  .grid-tiles .work-item:nth-child(2n) .work-item-description {
+    @include transform (translateY(-100%));
+  }
+
+  .grid-tiles .work-item:nth-child(2n) .work-item-description:before {
+    bottom: -13px;
+    top: auto;
+  }
+}
+
+.hover-zoom .work-img img {
+  @include transition (all 2s ease-in-out);
+}
+
+.hover-zoom:hover .work-img img {
+  @include transform (scale(1.1,1.1));
+}
+
+
+/*-------------------------------------------------------*/
+/* With Description
+/*-------------------------------------------------------*/
+
+.works-grid.description .work-description {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.grid-1-col {
+  .work-item {
+    width: 100%;    
+    padding: 0 15px;
+
+    &:hover .work-container {
+      @include box-shadow (0px 15px 30px 0px rgba(18, 20, 23, 0.05));
+      @include transform (translateY(-5px));
+    }
+  }
+
+  .work-container {
+    @include box-shadow (0px 0px 0px 0px rgba(18, 20, 23, 0.05));
+    @include transition (.2s ease-in-out);
+    margin-bottom: 30px;
+  }
+
+  .work-description {
+    width: 50%;
+    bottom: auto;
+    position: relative;
+    float: right;
+    background-color: #fff;
+    padding: 75px 70px 270px;
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 7px;
+    }
+
+    span {
+      font-family: $alt-font;
+      font-style: italic;
+      color: $light-grey;
+    }
+  }
+}
+
+.work-item.align-right {
+  .work-description {
+    float: left;
+  }
+
+  .bg-img-holder {
+    float: right;
+    right: 0;
+  }
+}
+
+.bg-img-holder {
+  position: absolute;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  float: left;
+
+  .bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-size: cover !important;
+    background-position: 50% !important;
+  }
+
+  img {
+    display: none;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Single Project
+/*-------------------------------------------------------*/
+
+.project-description {
+  padding-left: 5%;
+}
+
+.product_meta {
+
+  .detail-wrap {
+    display: table;
+    table-layout: fixed;
+  }
+
+  .detail-label,
+  .detail-value {
+    display: table-cell;
+    line-height: 28px;
+    font-size: 14px;
+  }
+
+  .detail-label {
+    min-width: 110px;
+    color: $heading-color;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Prject Nav
+/*-------------------------------------------------------*/
+
+.project-nav {
+  background-color: $bg-light;
+  padding: 50px 0;
+
+  li {
+    position: relative;
+  }
+
+  li a {
+    font-family: $heading-font;
+    color: $heading-color;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  .page-prev a,
+  .page-next a {
+    position: relative;
+    @include transition ($all);
+  }
+
+  .page-prev i,
+  .page-next i {
+    font-size: 22px;
+    position: absolute;
+  }
+
+  .page-prev {
+    i {
+      left: 0;
+    }
+
+    a {
+      padding-left: 28px;
+    }
+
+    a:hover {
+      padding-left: 24px;
+    }
+  }
+
+  .page-next {
+    text-align: right;
+    i {
+      right: 0;
+    }
+
+    a {
+      padding-right: 28px;
+    }
+
+    a:hover {
+      padding-right: 24px;
+    }
+  }
+  
+  .back-to-projects {
+    text-align: center;
+  }
+}
+
+
+
+/*-------------------------------------------------------*/
+/* Style-2
+/*-------------------------------------------------------*/
+
+.portfolio-single.style-2 {
+
+  .project-description {
+    padding-left: 15px;
+  }
+
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Code | Freehand.io</title>
+    <!-- Description -->
+    <meta name="description" content=" Create websites just with Drawings!" />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/ourlogo.png" />
+    <link rel="apple-touch-icon" href="img/ourlogo.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/ourlogo.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/ourlogo.png" />
+    <link rel="stylesheet" href="./codepageACE.css" />
+    <link rel="stylesheet" href="./new_generate.css" />
+    <!-- <link rel="stylesheet" href="./codestyle.css" /> -->
+    <!-- <script  src="./codescript.js"></script> -->
+    <title>freehand.io | Preview</title>
+  </head>
+  <body style="margin-top: 1%">
+    <div style="position: absolute;top: 3%;">
+      <div class="container">
+        <div class="col-md-2">
+          <!-- <img
+            src="https://image.flaticon.com/icons/svg/1197/1197414.svg"
+            style="width: 60%"
+          /> -->
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <h1 style="color: whitesmoke">
+          <strong>Preview</strong>
+        </h1>
+        <p style="color: blanchedalmond">(Scroll down to view code)</p>
+      </div>
+      <div class="browser">
+        <div class="browser__header">
+          <nav class="header__buttons">
+            <a href="#" class="header__button1"></a>
+            <a href="#" class="header__button2"></a>
+            <a href="#" class="header__button3"></a>
+          </nav>
+          <div class="header__center">
+            <nav class="header__history">
+              <a href="" class="header__back"></a>
+              <a href="" class="header__forward"></a>
+            </nav>
+            <div class="header__protocol">
+              https://
+            </div>
+            <input
+              class="header__input"
+              type="text"
+              placeholder="freehand.io/myWebsite"
+            />
+          </div>
+          <nav class="header__items">
+            <a href="#viewcode">
+              <span style="color: gray"> View Code</span>
+            </a>
+          </nav>
+          <nav class="header__items">
+            <a onclick='download_file("my_file.html", dynamic_text())'>
+              <span style="color: gray"> Download</span>
+            </a>
+          </nav>
+        </div>
+        <!-- browser header -->
+
+        <iframe
+          class="browser__content"
+          src=""
+          height="100%"
+          width="100%"
+          id="frame"
+        ></iframe>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </div>
+    <button
+      class="btn-primary rounded"
+      style="position: absolute ;left: 80%; top:10%"
+      onclick='download_file("my_file.html", dynamic_text())'
+    >
+      Download as HTML
+    </button>
+    <div></div>
+    <!----editor-->
+    <!-- <div style=" position:absolute;top: 125%">
+      <h1 style="color: black ; position:absolute;top: 55%">
+        <strong>Preview</strong>
+      </h1>
+    </div> -->
+
+    <div
+      style="position: absolute ; margin-top:40% ; margin-bottom: 5% ; width: 80% "
+    >
+      <div class="window" id="viewcode">
+        <div class="window-header">
+          <div class="action-buttons"></div>
+          <select class="language">
+            <!-- <option value="javascript" >JavaScript</option> -->
+            <option value="markup" selected>HTML</option>
+          </select>
+        </div>
+
+        <div id="editor"></div>
+        <!-- this works using xmp and NOT when using div's! -->
+        <xmp id="my_html_hidden"></xmp>
+      </div>
+    </div>
+
+    <!-- Text and Download Matter -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.01/ace.js"></script>
+    <script src="./codepageACE.js"></script>
+    <!-- partial -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/xml/xml.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/css/css.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/javascript/javascript.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/htmlmixed/htmlmixed.js"></script>
+
+    <script src="./new_generate.js"></script>
+  </body>
+</html>

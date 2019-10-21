@@ -64,7 +64,7 @@
 ## Demo
 
 <p align="center">
- <img height=350px  src="https://github.com/nikhildsahu/Freehand.io/blob/master/demo.gif" >
+ <img height=375px  src="./demo.gif" >
 </p>
 
 ----------------------------------------------------- 

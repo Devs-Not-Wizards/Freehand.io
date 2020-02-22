@@ -68,7 +68,7 @@
 </p>
 
 ----------------------------------------------------- 
-## Implemnetation
+## Implementation
 
 - We are using YOLO model and Transfer Learning to train it to our custom Images.
 - We have trained our ML Model to detect these components.
